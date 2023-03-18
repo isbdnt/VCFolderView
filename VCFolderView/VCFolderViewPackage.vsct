@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<Extern href="stdidcmd.h" />
+	<Extern href="vsshlids.h" />
+	<Commands package="VCFolderViewPackage">
+		<Menus>
+			<Menu guid="VCFolderViewCmdSet" id="VCFolderViewMenu" priority="0x0000" type="Menu">
+				<Parent guid="VCFolderViewCmdSet" id="TopLevelGroup" />
+				<Strings>
+					<ButtonText>VC Folder View</ButtonText>
+				</Strings>
+			</Menu>
+		</Menus>
+		<Groups>
+			<Group guid="VCFolderViewCmdSet" id="TopLevelGroup" priority="0x0000">
+			</Group>
+			<Group guid="VCFolderViewCmdSet" id="VCFolderViewMenuGroup" priority="0x0000">
+				<Parent guid="VCFolderViewCmdSet" id="VCFolderViewMenu" />
+			</Group>
+		</Groups>
+		<Buttons>
+			<Button guid="VCFolderViewCmdSet" id="RefreshCommand" priority="0x0001" type="Button">
+				<Parent guid="VCFolderViewCmdSet" id="VCFolderViewMenuGroup" />
+				<CommandFlag>DefaultDisabled</CommandFlag>
+				<Strings>
+					<ButtonText>Refresh</ButtonText>
+				</Strings>
+			</Button>
+			<Button guid="VCFolderViewCmdSet" id="RevealCommand" priority="0x0002" type="Button">
+				<Parent guid="VCFolderViewCmdSet" id="VCFolderViewMenuGroup" />
+				<CommandFlag>DefaultDisabled</CommandFlag>
+				<Strings>
+					<ButtonText>Reveal in File Explorer</ButtonText>
+				</Strings>
+			</Button>
+			<Button guid="VCFolderViewCmdSet" id="AddNewFileCommand" priority="0x0003" type="Button">
+				<Parent guid="VCFolderViewCmdSet" id="VCFolderViewMenuGroup" />
+				<CommandFlag>DefaultDisabled</CommandFlag>
+				<Strings>
+					<ButtonText>New File</ButtonText>
+				</Strings>
+			</Button>
+			<Button guid="VCFolderViewCmdSet" id="AddNewFolderCommand" priority="0x0004" type="Button">
+				<Parent guid="VCFolderViewCmdSet" id="VCFolderViewMenuGroup" />
+				<CommandFlag>DefaultDisabled</CommandFlag>
+				<Strings>
+					<ButtonText>New Folder</ButtonText>
+				</Strings>
+			</Button>
+			<Button guid="VCFolderViewCmdSet" id="DuplicateCommand" priority="0x0005" type="Button">
+				<Parent guid="VCFolderViewCmdSet" id="VCFolderViewMenuGroup" />
+				<CommandFlag>DefaultDisabled</CommandFlag>
+				<Strings>
+					<ButtonText>Duplicate</ButtonText>
+				</Strings>
+			</Button>
+			<Button guid="VCFolderViewCmdSet" id="CopyCommand" priority="0x0006" type="Button">
+				<Parent guid="VCFolderViewCmdSet" id="VCFolderViewMenuGroup" />
+				<CommandFlag>DefaultDisabled</CommandFlag>
+				<Strings>
+					<ButtonText>Copy</ButtonText>
+				</Strings>
+			</Button>
+			<Button guid="VCFolderViewCmdSet" id="CutCommand" priority="0x0007" type="Button">
+				<Parent guid="VCFolderViewCmdSet" id="VCFolderViewMenuGroup" />
+				<CommandFlag>DefaultDisabled</CommandFlag>
+				<Strings>
+					<ButtonText>Cut</ButtonText>
+				</Strings>
+			</Button>
+			<Button guid="VCFolderViewCmdSet" id="PasteCommand" priority="0x0008" type="Button">
+				<Parent guid="VCFolderViewCmdSet" id="VCFolderViewMenuGroup" />
+				<CommandFlag>DefaultDisabled</CommandFlag>
+				<Strings>
+					<ButtonText>Paste</ButtonText>
+				</Strings>
+			</Button>
+			<Button guid="VCFolderViewCmdSet" id="RenameCommand" priority="0x0009" type="Button">
+				<Parent guid="VCFolderViewCmdSet" id="VCFolderViewMenuGroup" />
+				<CommandFlag>DefaultDisabled</CommandFlag>
+				<Strings>
+					<ButtonText>Rename</ButtonText>
+				</Strings>
+			</Button>
+			<Button guid="VCFolderViewCmdSet" id="CopyPathCommand" priority="0x000A" type="Button">
+				<Parent guid="VCFolderViewCmdSet" id="VCFolderViewMenuGroup" />
+				<CommandFlag>DefaultDisabled</CommandFlag>
+				<Strings>
+					<ButtonText>Copy Path</ButtonText>
+				</Strings>
+			</Button>
+			<Button guid="VCFolderViewCmdSet" id="RemoveCommand" priority="0x000B" type="Button">
+				<Parent guid="VCFolderViewCmdSet" id="VCFolderViewMenuGroup" />
+				<CommandFlag>DefaultDisabled</CommandFlag>
+				<Strings>
+					<ButtonText>Remove</ButtonText>
+				</Strings>
+			</Button>
+			<Button guid="VCFolderViewCmdSet" id="DeleteCommand" priority="0x000C" type="Button">
+				<Parent guid="VCFolderViewCmdSet" id="VCFolderViewMenuGroup" />
+				<CommandFlag>DefaultDisabled</CommandFlag>
+				<Strings>
+					<ButtonText>Delete</ButtonText>
+				</Strings>
+			</Button>
+		</Buttons>
+	</Commands>
+	<CommandPlacements>
+		<CommandPlacement guid="VCFolderViewCmdSet" id="TopLevelGroup" priority="0x0000">
+			<Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_PROJNODE" />
+		</CommandPlacement>
+		<CommandPlacement guid="VCFolderViewCmdSet" id="TopLevelGroup" priority="0x0000">
+			<Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_FOLDERNODE" />
+		</CommandPlacement>
+		<CommandPlacement guid="VCFolderViewCmdSet" id="TopLevelGroup" priority="0x0000">
+			<Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_ITEMNODE" />
+		</CommandPlacement>
+	</CommandPlacements>
+	<Symbols>
+		<GuidSymbol name="VCFolderViewPackage" value="{7c020ffe-3c9c-4196-878d-88f8502c1dd7}" />
+		<GuidSymbol name="VCFolderViewCmdSet" value="{5e1c6ef5-1e4f-4523-a97d-f92c88fd4d58}">
+			<IDSymbol name="TopLevelGroup" value="0x0100" />
+			<IDSymbol name="VCFolderViewMenu" value="0x1000" />
+			<IDSymbol name="VCFolderViewMenuGroup" value="0x1100" />
+			<IDSymbol name="AddNewFileCommand" value="0x1101" />
+			<IDSymbol name="AddNewFolderCommand" value="0x1102" />
+			<IDSymbol name="DuplicateCommand" value="0x1103" />
+			<IDSymbol name="RefreshCommand" value="0x1104" />
+			<IDSymbol name="RemoveCommand" value="0x1105" />
+			<IDSymbol name="DeleteCommand" value="0x1106" />
+			<IDSymbol name="CopyCommand" value="0x1107" />
+			<IDSymbol name="CutCommand" value="0x1108" />
+			<IDSymbol name="PasteCommand" value="0x1109" />
+			<IDSymbol name="RevealCommand" value="0x110A" />
+			<IDSymbol name="RenameCommand" value="0x110B" />
+			<IDSymbol name="CopyPathCommand" value="0x110C" />
+		</GuidSymbol>
+	</Symbols>
+</CommandTable>
